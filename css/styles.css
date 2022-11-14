@@ -4,22 +4,31 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size:150%;
+	font-family: 'Cormorant Garamond', serif;
+	display:grid;
+	grid-template: 100px 1fr 100px / 200px 1fr 200px;
+}
+header{
+	grid-area: 1 / 1 / span 1 / span 3;
+}
+
+aside{
+	grid-area: 2 / 1 / span 1 / span 1;
+}
+
+main{
+	grid-area: 2 / 2 / span 1 / span 1;
+}
+
+footer{
+	grid-area: 3 / 1 / span 1 / span 3;
+	text-align: center;
 }
 
 /*Make the h1 heading bigger with a bold font*/
 h1{
 	font-size: 2em; 
 	font-weight: bold;
-}
-
-.active{
-	background: #D7C0AE;
-    text-transform: uppercase;
-	text-align: center;
-}
-
-.active a{
-	text-decoration: none;;
 }
 
 /*Style the images*/
@@ -32,6 +41,7 @@ img{
     margin: 10px;
 	opacity:1;
 }
+
 
 img:hover{
 	opacity:0.3;
@@ -48,32 +58,93 @@ p, h1, h2 {
     padding: 10px;
 }
 
-
-/*Change the styling for all of the list 
-items in the nav section*/
-nav li{
-	background-color: #B7C4CF;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
+figure{
+	font-size: 15px;
+	text-align: center;
 }
 
-nav a:hover {
-	background-color: #D7C0AE;
-}
-
-/*Added this so the links stay the same color*/
-a:visited{color:white}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+nav li {
+	float: left;
+  }
+  
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 8px 15px;
+	text-decoration: none;
+  }
+  
+nav li a:hover {
+	background-color: #111;
+  }
 
 html {
 	background-color: #EEE3CB;
 }
 
-.container{
-	display: grid;
-	grid-template: repeat(2,1fr) / repeat(4,1fr);
-	align-items: center;
-	justify-items: center;
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#simba{
+	animation: fadeIn 3s;	
+}
+
+@media (prefers-reduced-motion){
+    #simba{
+        animation: none;
+    }
+}
+
+span{
+	font-weight: bolder;
+}
+
+.gallery{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    align-items: center;
+}
+
+@media all and (max-width: 700px){
+	body{
+		display:grid;
+		grid-template: 100px 10px 1fr 100px / 1fr;
+	}
+
+	header{
+		grid-row: 1 / span 1;
+	}
+
+	aside{
+		grid-area: 2 / span 1;
+	}
+
+	main{
+		grid-row: 3 / span 1;
+	}
+
+	footer{
+		grid-row: 4 / span 1;
+	}
+
+	.gallery{
+		flex-direction: column;
+	}
 }
