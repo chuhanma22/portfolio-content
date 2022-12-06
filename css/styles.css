@@ -199,6 +199,10 @@ span {
 	position: absolute;
 }
 
+#introvideo{
+	display: flex; 
+	justify-content: center;
+}
 
 /* Media Query for Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 1024px) {
