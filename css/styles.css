@@ -198,10 +198,13 @@ span {
 	z-index: 1;
 	position: absolute;
 }
-
-#introvideo{
-	display: flex; 
+#introvideo {
+	display: flex;
 	justify-content: center;
+}
+iframe {
+	width: 280px;
+	height: 157.5px;
 }
 
 /* Media Query for Tablets, Ipads */
@@ -239,6 +242,11 @@ span {
 	nav li {
 		padding: 8px 15px;
 	}
+
+	iframe {
+		width: 560px;
+		height: 315px;
+	}
 }
 
 /* Media Query for Laptops and Desktops */
@@ -275,5 +283,10 @@ span {
 
 	nav li {
 		padding: 8px 15px;
+	}
+
+	iframe {
+		width: 840px;
+		height: 472.5px;
 	}
 }
