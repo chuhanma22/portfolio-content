@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>ThatSkyGame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/html5reset.css">
@@ -14,64 +14,106 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RELXKZD49S"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RELXKZD49S');
+</script>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="seasons.html">Seasons</a></li>
+                <li class="active"><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <aside></aside>
     <main>
-        <h1>About me</h1>
+        <h1>About</h1>
 
-        <h2>Harper(Chuhan) Ma.</h2>
-        <p>I’m currently a graduate student at UMSI, interested in User Centered Agile Development.</p>
-        <p>I completed my Bachelor Degree at The Ohio State Univerisy, double majored in Computer Science and
-            Communication.</p>
-        <p>Please contact me via chuhanma@umich.edu.</p>
+        <h2>Our Team</h2>
+        <p>
+            We are artists, designers, engineers, musicians, creators, all unified to make an impact and positive change
+            with our games. Our team is made up of a mix of diverse talent, cultures, leadership and experience.
+        </p>
+
+        <h2>History</h2>
+        <p>
+            Founded in 2006, we are committed to developing broadly accessible, artistic, emotional and enriching
+            experiences, including award-winning titles flOw, Flower and Journey. Our work has exhibited in galleries
+            and exhibitions across the globe, including the induction into Smithsonian’s permanent collection. Our hope
+            is to expand the range of emotional experiences possible in video games, so that it can be enjoyed and loved
+            by people of all ages, cultures and backgrounds.
+
+
+        </p>
+
+        <h2>Studio</h2>
+        <p>
+            Our studio fosters a unique approach through experimentation, iteration, collaboration and perfection to
+            create entertainment experiences never played before in the industry. We take pride in making games that are
+            intuitive and enjoyed by everyone.
+        </p>
+
+        <h2>Wiki</h2>
+        <p>
+            Thatgamecompany, Inc. (stylized as thatgamecompany) is an American independent video game development
+            company founded by University of Southern California students Jenova Chen and Kellee Santiago in 2006. The
+            company was a developer for Sony Computer Entertainment, contracted to create three downloadable games for
+            the PlayStation 3's PlayStation Network service, and has since secured independent funding. The first of
+            their games is a remake of Chen's award-winning Flash title Flow, with enhanced visuals and sound, added
+            multiplayer modes and compatibility with the PlayStation 3's motion-sensitive controller. The title was
+            released on the PlayStation Store in 2007. The company's second PlayStation 3 game, Flower, was released on
+            the PlayStation Store in 2009, and their third game, Journey, was released in March 2012 on the PlayStation
+            Store. Their fourth game, Sky: Children of the Light, was released in July 2019 on iOS and in April 2020 on
+            Android, and later released on the Nintendo Switch in June 2021.
+        </p>
+
+        <p>
+            According to Jenova Chen, the company focuses on creating video games that provoke emotional responses from
+            players. He has stated that, while the company is not opposed to making action-oriented games, he believes
+            that enough such titles are released by the established video game industry. When designing a game, Chen and
+            Thatgamecompany's process is to start by mapping out what the game should make the player feel, rather than
+            by establishing game mechanics. Chen has stated that the company does not plan to produce large, blockbuster
+            titles, due to their belief that the pressure for high sales would stifle innovation.
+        </p>
+
+        <h2>Contact Us</h2>
+
+        <div class="formContainer">
+            <form action="https://formspree.io/f/xoqbgaod" method="POST">
+                <label for="fname">Your first name:</label>
+                <input type="text" name="fname" placeholder="Your first name..">
+                <label for="lname">Your first name:</label>
+                <input type="text" name="lname" placeholder="Your last name..">
+                <label for="email">Your email:</label>
+                <input type="email" name="email" placeholder="Your email..">
+                <label for="message">Your message:</label>
+                <textarea type="text" name="message" placeholder="Your message.."></textarea>
+                <input type="submit" value="Send"></input>
+            </form>
+        </div>
 
         <figure>
-            <img src="images/me.jpg" alt="Selfie" width="500" />
+            <img id="sky" src="images/sky.png" alt="Logo of Sky" width="500" />
         </figure>
-
-
-        <p>
-            I have always been a “gamer“. At first, I just enjoyed playing video games in my spare time, but eventually
-            I began to consider video games as an education and career path. In 2019, I took my first related course
-            Video Games and the Individual in which we were asked to play and analyze different games. While I enjoyed
-            playing the game “Minecraft Hour of Code”, I admired how designers use the game to promote coding skills for
-            players who may have no background in programming. Throughout this course, I was introduced to how video
-            games relate to other technologies and their impact on individuals, communities, and society at large. At
-            the end of this course, I conducted research on a game called “Chinese Parents“, a life simulation that
-            modeled the challenges and anxieties of growing up with traditional Chinese parents, which attempts to
-            provide a better understanding of the stress of raising children in the unique social environment from a
-            parent’s perspective.
-        </p>
-
-        <p>
-            During my academic studies, I have accomplished a variety of projects which equipped me with the technical
-            skills and knowledge to enter the game industry. Through courses offered from the Computer Science and
-            Engineering Department, I produced games such as a first-person maze shooter and “World 1-1” of Nintendo’s
-            Zelda 2D using programming tools C# and Unity, practicing familiarity in game physics, engine, map, 2D
-            graphic, and sound, as well as identifying the approach to software development through the values and
-            principles of the Agile Manifesto. In the double major, I was able to take communication courses like
-            Human-Computer Interaction and User-Centered Design to reevaluate designs from different perspectives. I was
-            taught to conduct benchmarking on original products using design principles and redesigned a Bluetooth
-            speaker by improving user experience with enhanced visual appearance and functionality.
-        </p>
 
     </main>
 
     <footer>
-        &copy; 2022 by Harper Ma
+        &copy; 2022 by ThatGameCompany
     </footer>
 
 </body>
